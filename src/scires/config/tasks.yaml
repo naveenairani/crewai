@@ -1,0 +1,46 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic}.
+    Make sure you find any interesting and relevant information given
+    the current year is {current_year}.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}.
+  agent: researcher
+
+analysis_task:
+  description: >
+    Analyze the data collected by the researcher to identify patterns, anomalies,
+    and potential discoveries in {topic}. Provide insights and highlight key findings.
+  expected_output: >
+    A detailed analysis report with identified patterns, anomalies, and potential
+    discoveries in {topic}. Include charts, graphs, or visualizations if applicable.
+  agent: research_analyst
+
+hypothesis_task:
+  description: >
+    Based on the research and analysis findings, propose new hypotheses or
+    research questions in {topic}. Ensure the hypotheses are innovative and
+    grounded in the data.
+  expected_output: >
+    A list of 3-5 new hypotheses or research questions in {topic}, along with
+    a brief explanation of their significance and potential impact.
+  agent: hypothesis_generator
+
+collaboration_task:
+  description: >
+    Identify potential collaborators, research opportunities, and funding sources
+    in {topic}. Provide a strategic plan for advancing the research.
+  expected_output: >
+    A detailed report listing potential collaborators, research opportunities,
+    and funding sources in {topic}. Include a strategic plan for collaboration
+    and next steps.
+  agent: collaboration_advisor
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'.
+  agent: research_analyst
